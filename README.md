@@ -1,6 +1,6 @@
-# Font Workshop
+# Font Talk
 
-Presentation for a font-making workshop using [reveal.js](https://revealjs.com/).
+Presentation for a font talk using [reveal.js](https://revealjs.com/).
 
 ## Convert `TTF` to `WOFF` font
 
