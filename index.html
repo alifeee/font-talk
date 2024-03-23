@@ -22,47 +22,19 @@
         display: block;
       }
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        let stylesheets = document.styleSheets;
-        let rules;
-        for (let i = 0; i < stylesheets.length; i++) {
-          let stylesheet = stylesheets[i];
-          if (
-            stylesheet.href &&
-            stylesheet.href.includes("scriptfonts/fonts.css")
-          ) {
-            rules = stylesheet.cssRules;
-          }
-        }
-        // loop over CSSStyleRules and collect selectorText
-        let selectors = [];
-        for (let i = 0; i < rules.length; i++) {
-          let rule = rules[i];
-          if (rule instanceof CSSStyleRule) {
-            // remove leading dot
-            let selector = rule.selectorText.slice(1);
-            selectors.push(selector);
-          }
-        }
-
-        let fontswitch = document.getElementById("font-switch");
-        console.log(fontswitch);
-        // change class of font-switch to a random font every 2 seconds
-        let interval = setInterval(() => {
-          let randomIndex = Math.floor(Math.random() * selectors.length);
-          // remove final class and add new class
-          fontswitch.classList.remove(fontswitch.classList[1]);
-          fontswitch.classList.add(selectors[randomIndex]);
-        }, 10000);
-      });
-    </script>
+    <script src="./dist/font-toggler.js"></script>
   </head>
   <body>
     <div class="reveal">
       <section class="slides">
         <section>
-          <h1 class="font--bogface">Font Workshop!</h1>
+          <font-toggler
+            stylesheet="fonts.css"
+            every_s="5"
+            class="font--bogface"
+          >
+            <h1>Fonts!</h1>
+          </font-toggler>
           <img
             style="border-radius: 50%; height: 8rem; margin: 0"
             src="https://alifeee.co.uk/profile-picture.png"
@@ -77,11 +49,11 @@
           <img
             style="height: 10rem"
             src="./images/qr_to_website.png"
-            alt="QR code linking to https://alifeee.co.uk/font-workshop/"
+            alt="QR code linking to https://alifeee.co.uk/font-talk/"
           />
           <figcaption class="font--toms-handwriting">
-            <a href="https://alifeee.co.uk/font-workshop/" target="_blank"
-              >https://alifeee.co.uk/font-workshop/</a
+            <a href="https://alifeee.co.uk/font-talk/" target="_blank"
+              >https://alifeee.co.uk/font-talk/</a
             >
           </figcaption>
         </section>
@@ -455,14 +427,14 @@
           <img
             style="height: 10rem"
             src="./images/qr_to_website.png"
-            alt="QR code linking to https://alifeee.co.uk/font-workshop/"
+            alt="QR code linking to https://alifeee.co.uk/font-talk/"
           />
           <figcaption
             class="font--toms-handwriting"
             style="margin-bottom: 2rem"
           >
-            <a href="https://alifeee.co.uk/font-workshop/" target="_blank"
-              >https://alifeee.co.uk/font-workshop/</a
+            <a href="https://alifeee.co.uk/font-talk/" target="_blank"
+              >https://alifeee.co.uk/font-talk/</a
             >
           </figcaption>
           <h1 id="font-switch" class="r-stretch font--bogface">
