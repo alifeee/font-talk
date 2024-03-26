@@ -1,0 +1,26 @@
+construction
+x-height
+cap-height
+ascenders
+descenders
+width
+width regularity
+variability
+weight
+slant
+contrast
+angle of contrast
+weight distribution
+stems
+joins
+bowls
+terminals
+serifs
+monospace
+speed
+regularity
+flourish
+decoration
+brackets
+slab-serif
+dimension

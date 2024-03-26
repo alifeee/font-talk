@@ -1,0 +1,30 @@
+splines
+paths
+em-unit
+character
+glyph
+outline
+bitmap
+PostScript
+TrueType
+OpenType
+SVG
+hinting
+kerning
+rasterized
+layers
+lookups
+features
+scripts
+languages
+ligatures
+lookup tables
+GSUB table
+GPOS table
+anchor points
+classes
+baselines
+ideographs
+metrics
+spacing
+accents
