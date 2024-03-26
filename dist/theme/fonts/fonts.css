@@ -65,6 +65,8 @@
 }
 .font--germs {
   font-family: "Germs", sans-serif !important;
+  /* make all letters uppercase */
+  text-transform: uppercase;
 }
 /* TOM'S HANDWRITING */
 @font-face {
