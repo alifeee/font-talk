@@ -24,6 +24,20 @@
       cite {
         font-style: italic;
       }
+      .float-words > span {
+        display: block;
+        background-color: gray;
+        color: white;
+        position: fixed;
+        top: var(--t);
+        left: var(--l);
+        rotate: var(--r);
+        font-family: "Tom's New Roman", serif;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        border: 1px solid white;
+      }
     </style>
     <script src="./dist/font-toggler.js"></script>
   </head>
@@ -60,8 +74,8 @@
           <ul>
             <li>Why I love fonts</li>
             <ul>
-              <li>Design</li>
-              <li>Individuality</li>
+              <li>Design is fun</li>
+              <li>Individuality is fun</li>
             </ul>
             <li>Using Fonts</li>
             <ul>
@@ -79,7 +93,7 @@
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1>Why I like fonts</h1>
+          <h1>Design is fun</h1>
           <div class="r-stack r-stretch">
             <img
               class="fragment"
@@ -169,69 +183,632 @@
             data-fragment-index="1"
             time="60"
             autostart="no"
-          />
+          ></countdown>
+          <div class="fragment">
+            <p>How many did you find?</p>
+            <p>Is it more than you expect?</p>
+            <p>How different are they?</p>
+            <p>How many do you think you see in a day?</p>
+          </div>
         </section>
 
         <!-- slide -->
         <section data-auto-animate>
           <section>
-            <h1>Why I like fonts</h1>
-            <h2 class="fragment" data-fragment-index="1">They are personal</h2>
-            <h3 class="fragment" data-fragment-index="1">This brings me joy</h3>
-          </section>
-          <section>
-            <p>Fonts by Tom7</p>
-            <img
-              class="r-stretch"
-              src="./images/fonts_by_tom7.png"
-              alt="Screenshot of Tom7's font website"
-            />
-            <figcaption>
-              <a href="http://fonts.tom7.com/">http://fonts.tom7.com/</a>
-            </figcaption>
-          </section>
-          <section>
-            <p>Fonts by CloFont</p>
-            <img
-              class="r-stretch"
-              src="./images/fonts_by_clofont.png"
-              alt="Screenshot of Clofont's font website"
-            />
-            <figcaption>
-              <a href="http://clofont.free.fr/">http://clofont.free.fr/</a>
-            </figcaption>
+            <h1 style="font-size: 5rem">Individuality is fun</h1>
+            <div class="r-stack r-stretch">
+              <img
+                class="fragment"
+                data-fragment-index="1"
+                style="rotate: -2deg"
+                src="./images/fonts_by_tom7.png"
+                alt="Screenshot of fonts.tom7.com"
+              />
+              <img
+                class="fragment"
+                data-fragment-index="2"
+                style="rotate: 4deg"
+                src="./images/fonts_by_clofont.png"
+                alt="Screenshot of clofont.free.fr"
+              />
+            </div>
+            <div class="r-stack" style="font-size: 1rem">
+              <figcaption
+                class="fragment fade-in-then-out"
+                data-fragment-index="1"
+              >
+                <a href="http://fonts.tom7.com/">
+                  <cite>http://fonts.tom7.com/</cite></a
+                >
+              </figcaption>
+              <figcaption class="fragment fade-in" data-fragment-index="2">
+                <a href="http://clofont.free.fr/"
+                  ><cite>http://clofont.free.fr/</cite></a
+                >
+              </figcaption>
+            </div>
           </section>
         </section>
 
         <!-- slide -->
         <section>
-          <h1>Why I like fonts</h1>
-          <h2 class="fragment">I can use them!</h2>
-          <ul class="fragment">
-            <li>Websites</li>
-            <li>Documents</li>
-            <li>Custom Font Defaults (Notepad, Browser)</li>
-            <li>Printing & laser-cutting</li>
-            <li>Digital greetings cards</li>
-          </ul>
-          <p class="fragment">Computers are still customisable!</p>
-        </section>
-
-        <!-- slide -->
-        <section>
-          <h1>How to design a font</h1>
-          <p class="fragment" data-fragment-index="1">
-            It's easy to get lost in design
+          <h1>Using Fonts</h1>
+          <p>
+            Personal fonts have a great home on personal websites or anywhere
+            you can put CSS!
           </p>
-          <blockquote class="fragment" data-fragment-index="2">
+          <pre>
+            <code data-line-numbers data-trim>
+              @font-face {
+                font-family: "BogFace";
+                src: url("./bogface/BogFace.woff") format("woff");
+              }
+              .font--bogface {
+                font-family: "BogFace", sans-serif;
+              }
+            </code>
+          </pre>
+          <code class="font--bogface">
+            &lt;span class="font--bogface"&gt;simple BogFace!&lt;/span&gt;
+          </code>
+          <p style="font-size: 1rem">
+            See Zach Leatherman's
+            <a href="https://www.zachleat.com/web/comprehensive-webfonts/"
+              >Comprehensive Webfonts</a
+            >
+            &
+            <a href="https://www.zachleat.com/web/font-checklist/"
+              >Font Checklist</a
+            >
+            for more.
+          </p>
+        </section>
+
+        <!-- slide -->
+        <section>
+          <h1 style="font-size: 3rem">Using personal fonts on the web</h1>
+          <!-- grid of three images with bottom centred -->
+          <div
+            style="display: grid; grid-template-columns: repeat(2, 1fr)"
+            class="r-stretch"
+          >
+            <figure>
+              <img
+                style="border-radius: 1rem; margin: 0"
+                src="./images/using_webfonts_weeknotes.png"
+                alt="Screenshot of weeknotes.alifeee.co.uk"
+              />
+              <figcaption style="font-size: 1rem">
+                <a href="https://weeknotes.alifeee.co.uk"
+                  >weeknotes.alifeee.co.uk</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                style="border-radius: 1rem; margin: 0"
+                src="./images/using_webfonts_rsshole.png"
+                alt="Screenshot of rss hole browser extension"
+              />
+              <figcaption style="font-size: 1rem">
+                <a href="https://github.com/neilzilla/rss-hole/"
+                  >https://github.com/neilzilla/rss-hole/</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                style="border-radius: 1rem; margin: 0"
+                src="./images/using_webfonts_liputenpo.png"
+                alt="Screenshot of liputenpo.org"
+              />
+              <figcaption style="font-size: 1rem">
+                <a href="https://liputenpo.org/">liputenpo.org</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                style="border-radius: 1rem; margin: 0"
+                src="./images/using_webfonts_card.png"
+                alt="Screenshot of alifeee.co.uk/pages/card.html"
+              />
+              <figcaption style="font-size: 1rem">
+                <a
+                  href="https://alifeee.co.uk/pages/card.html?n=VG86IEZFUw==&m=Q29uZ3JhdHVsYXRpb25zIG9uIGZpbmRpbmcgYW4gRWFzdGVyIGVnZyB0aGlzIGhvbHkgd2VlayBvZiBFYXN0ZXI="
+                  >greetings card</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section>
+          <h1 style="font-size: 3rem">Google Fonts usage</h1>
+          <pre>
+            <code data-line-numbers data-trim>
+              #!/bin/bash
+              # has_google_fonts.sh
+              if grep -q "fonts.googleapis.com" $1; then
+                echo 1;
+              else
+                echo 0;
+              fi
+            </code>
+          </pre>
+          <pre>
+            <code data-line-numbers data-trim>
+              find ./sites/ -exec ./has_google_fonts.sh {} \;
+                | awk '{sum += $0; tot += 1} END {print sum "/" tot}'
+            </code>
+          </pre>
+          <table>
+            <tr>
+              <th>Site</th>
+              <th colspan="2">Fraction</th>
+            </tr>
+            <tr>
+              <td>Personal</td>
+              <td>20/101</td>
+              <td>██░░░░░░░░░░</td>
+            </tr>
+            <tr>
+              <td>Top 50</td>
+              <td>5/41</td>
+              <td>█░░░░░░░░░░░</td>
+            </tr>
+          </table>
+          <p>Caveat: does not show self-hosted fonts</p>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1>Google Fonts</h1>
+          <div
+            class="r-stretch"
+            style="display: grid; grid-template-columns: 1fr 1fr"
+          >
+            <div>
+              <ul>
+                <li>Quick</li>
+                <li>Compatibility¹</li>
+                <li>Licenced</li>
+                <li>cons mitigated if you self-host font</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Privacy & Tracking</li>
+                <ul>
+                  <li>Collection of IP, URL, & Headers¹</li>
+                  <li>GDPR legal issues²</li>
+                </ul>
+                <li>More servers involved</li>
+                <ul>
+                  <li>Slower</li>
+                  <li>Offline development</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div style="font-size: 1rem">
+            <p>
+              ¹:
+              <a href="https://developers.google.com/fonts/faq/privacy"
+                >https://developers.google.com/fonts/faq/privacy</a
+              >
+            </p>
+            <p>
+              ²:
+              <a
+                href="https://business.trustedshops.com/blog/google-fonts-legal-issues"
+                >https://business.trustedshops.com/blog/google-fonts-legal-issues</a
+              >
+            </p>
+          </div>
+        </section>
+        <section data-auto-animate>
+          <h1 class="font--artbrush">Google Fonts</h1>
+          <div
+            class="r-stretch"
+            style="display: grid; grid-template-columns: 1fr 1fr"
+          >
+            <div>
+              <ul>
+                <li class="font--fely">Quick</li>
+                <li class="font--primusscript">Compatibility¹</li>
+                <li class="font--flaemische-kanzleischrift">Licenced</li>
+                <li class="font--boring-boron">
+                  cons mitigated if you self-host font
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="font--akashi_m">Privacy & Tracking</li>
+                <ul>
+                  <li class="font--veniceclassic">
+                    Collection of IP, URL, & Headers¹
+                  </li>
+                  <li class="font--caclaskoevenweight">GDPR legal issues²</li>
+                </ul>
+                <li class="font--velocette">More servers involved</li>
+                <ul>
+                  <li class="font--xipars_u">Slower</li>
+                  <li class="font--unplugged">Offline development</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div style="font-size: 1rem" class="font--natural-log">
+            <p>
+              ¹:
+              <a href="https://developers.google.com/fonts/faq/privacy"
+                >https://developers.google.com/fonts/faq/privacy</a
+              >
+            </p>
+            <p>
+              ²:
+              <a
+                href="https://business.trustedshops.com/blog/google-fonts-legal-issues"
+                >https://business.trustedshops.com/blog/google-fonts-legal-issues</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section style="font-family: initial !important">
+          <h1 style="font-size: 3rem">Not using a font at all</h1>
+          <p>
+            page load speed, permacomputing &
+            <a href="https://www.websitecarbon.com/">carbon footprint</a>
+          </p>
+          <hr />
+          <p style="font-size: 2rem">
+            <a href="https://btxx.org/posts/webfonts/">
+              <cite>Stop Using Custom Web Fonts</cite>
+            </a>
+            , Bradley Taunt
+          </p>
+          <blockquote>
+            <pre>
+System Fonts Look Good
+"Think of the Consistency!"
+Loss of Personality
+Hurting Performance & Wasting Resources
+            </pre>
+          </blockquote>
+          <hr />
+          <p style="font-size: 2rem">
+            <a
+              href="https://nutcroft.com/blog/in-defense-of-user-defined-web-fonts/"
+            >
+              <cite>In defense of user-defined web fonts</cite> </a
+            >, Theodore Keloglou
+          </p>
+          <blockquote style="font-family: monospace; font-size: 0.55em">
+            it makes me happy that (i) my blog platform is insanely fast and
+            (ii) I let my users choose their own fonts.
+          </blockquote>
+        </section>
+
+        <!-- slide -->
+        <section>
+          <h1 style="font-size: 3rem">OFF the web</h1>
+          <div class="r-stack r-stretch">
+            <img
+              class="fragment"
+              data-fragment-index="1"
+              style="rotate: 1deg"
+              src="./images/offweb_notepad.png"
+              alt="Screenshot of notepad using custom font"
+            />
+            <img
+              class="fragment r-frame"
+              data-fragment-index="2"
+              style="rotate: -2deg"
+              src="./images/offweb_invoice.png"
+              alt="Screenshot of invoice using custom font"
+            />
+            <img
+              class="fragment"
+              data-fragment-index="3"
+              style="rotate: 3deg; border-radius: 3rem"
+              src="./images/offweb_laser.png"
+              alt="Picture of laser-cut wood with custom font"
+            />
+          </div>
+          <div class="r-stack">
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+            >
+              <a href="https://apps.microsoft.com/detail/9msmlrh6lzf3">
+                Notepad
+              </a>
+            </figcaption>
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="2"
+            >
+              <a href="https://github.com/alifeee/invoice_template/">
+                non-reproducible documents
+              </a>
+            </figcaption>
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="3"
+            >
+              <a href="https://www.sheffieldhackspace.org.uk/">
+                printing/laser cutting
+              </a>
+            </figcaption>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1 style="font-size: 4rem">"Boggy websites"</h1>
+          <h2 data-id="h2" style="font-size: 2rem">
+            Computers are customisable!
+          </h2>
+          <figure class="r-stretch">
+            <img
+              style="border-radius: 0.5rem; max-height: 80%"
+              src="./images/boggyweb_intro_customise.png"
+              alt="Screenshot of Firefox's font customise settings window"
+            />
+            <figcaption style="font-size: 1rem">
+              Firefox's
+              <a
+                href="https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use"
+              >
+                default font settings
+              </a>
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1 style="font-size: 4rem">"Boggy websites"</h1>
+          <h2 data-id="h2" style="font-size: 2rem">
+            Part 1: Unstyled websites
+          </h2>
+          <div class="r-stack r-stretch">
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://pabigot.github.io/pyxb/overview_how.html">
+                    https://pabigot.github.io/pyxb/overview_how.html
+                  </a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Marvin_Minsky">
+                    https://en.wikipedia.org/wiki/Marvin_Minsky
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ploum.net/2024-03-18-lost-focus.html">
+                    https://ploum.net/2024-03-18-lost-focus.html
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.zachleat.com/web-fonts/demos/dont.html">
+                    https://www.zachleat.com/web-fonts/demos/dont.html
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <img
+              class="fragment"
+              data-fragment-index="1"
+              style="rotate: 1deg"
+              src="./images/boggyweb_unstyled_pybx.png"
+              alt="Screenshot of pybx website, all in custom font"
+            />
+            <img
+              class="fragment"
+              data-fragment-index="2"
+              style="rotate: -2deg"
+              src="./images/boggyweb_unstyled_marvin.png"
+              alt="Screenshot of Wikipedia, all in custom font"
+            />
+          </div>
+          <div class="r-stack" style="font-size: 1rem">
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+            >
+              <a href="https://pabigot.github.io/pyxb/overview_how.html">
+                https://pabigot.github.io/pyxb/overview_how.html
+              </a>
+            </figcaption>
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="2"
+            >
+              <a href="https://en.wikipedia.org/wiki/Marvin_Minsky">
+                https://en.wikipedia.org/wiki/Marvin_Minsky
+              </a>
+            </figcaption>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1 style="font-size: 4rem">"Boggy websites"</h1>
+          <h2 data-id="h2" style="font-size: 2rem">
+            Part 1a: Unstylable websites
+          </h2>
+          <figure class="r-stretch">
+            <img
+              style="max-height: 80%"
+              src="./images/boggyweb_unstyleable_google.png"
+              alt="Screenshot of Google sign-in, showing a custom font in a select dropdown"
+            />
+            <figcaption style="font-size: 1rem">
+              <a href="https://accounts.google.com/v3/signin/identifier">
+                https://accounts.google.com/v3/signin/identifier
+              </a>
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1 style="font-size: 4rem">"Boggy websites"</h1>
+          <h2 data-id="h2" style="font-size: 2rem">
+            Part 2: Missing fonts or styles
+          </h2>
+          <div class="r-stack r-stretch">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="https://business.trustedshops.com/blog/google-fonts-legal-issues"
+                  >
+                    https://business.trustedshops.com/blog/google-fonts-legal-issues
+                  </a>
+                </li>
+                <li>
+                  <a href="https://patternclub.org/sheffield/">
+                    https://patternclub.org/sheffield/
+                  </a>
+                </li>
+                <li>
+                  <a href="https://thetraindriversacademy.com/apprenticeship/">
+                    https://thetraindriversacademy.com/apprenticeship/
+                  </a>
+                </li>
+                <li>
+                  <a href="https://jeffdude.github.io/">
+                    https://jeffdude.github.io/
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <img
+              class="fragment r-frame"
+              data-fragment-index="1"
+              style="rotate: 1deg"
+              src="./images/boggyweb_broken_googlefonts.png"
+              alt="Screenshot of website about fonts, all in custom font"
+            />
+            <img
+              class="fragment"
+              data-fragment-index="2"
+              style="rotate: -2deg"
+              src="./images/boggyweb_broken_traindriver.png"
+              alt="Screenshot of train driver training website, with a heading in a custom font"
+            />
+          </div>
+          <div class="r-stack" style="font-size: 1rem">
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+            >
+              <a
+                href="https://business.trustedshops.com/blog/google-fonts-legal-issues"
+              >
+                https://business.trustedshops.com/blog/google-fonts-legal-issues
+              </a>
+            </figcaption>
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="2"
+            >
+              <a href="https://thetraindriversacademy.com/apprenticeship/">
+                https://thetraindriversacademy.com/apprenticeship/
+              </a>
+            </figcaption>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1>You should make a font!</h1>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1 style="font-size: 3rem">You should make a font!</h1>
+          <pre><code data-line-numbers data-trim><script type="text/template">
+              wget https://alifeee.co.uk/bookmarks
+              cat bookmarks | grep "<a" | awk -F '"' '{print $2}' > sites.txt
+              for fn in `cat sites.txt`; do wget "$fn"; done
+              grep -rinE "<a.*font" sites/ > output.txt
+          </script></code></pre>
+          <p>Only 4 of 105 sites mentioned making fonts</p>
+          <nav
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
+            class="r-stretch"
+          >
+            <a href="http://fonts.tom7.com/">fonts.tom7.com</a>
+            <a href="http://clofont.free.fr/">clofont.free.fr</a>
+            <a href="https://about.cubictype.com/"> cubictype.com </a>
+            <a href="https://tholman.com/post/smelvetica/">
+              tholman.com/post/smelvetica
+            </a>
+          </nav>
+          <p style="font-size: 1.5rem">
+            Bonus mention:
+            <a href="https://blinry.org/anki-fonts/">
+              https://blinry.org/anki-fonts/
+            </a>
+          </p>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1>How to design a font</h1>
+          <blockquote>
             Font design can be a Trap, but I find it a rather pleasant one.
           </blockquote>
-          <p class="fragment" data-fragment-index="2">
-            from
+          <p>
             <a href="https://fontforge.org/docs/"
               >https://fontforge.org/docs/</a
             >
           </p>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h1>How to design a font</h1>
+          <div class="r-stretch"></div>
+          <div class="fragment float-words">
+            <span style="--t: 36%; --l: 77%; --r: -4deg">construction</span>
+            <span style="--t: 25%; --l: 45%; --r: -1deg">x-height</span>
+            <span style="--t: 43%; --l: 40%; --r: -2deg">cap-height</span>
+            <span style="--t: 15%; --l: 51%; --r: 4deg">ascenders</span>
+            <span style="--t: 23%; --l: 76%; --r: -5deg">descenders</span>
+            <span style="--t: 74%; --l: 70%; --r: 2deg">width</span>
+            <span style="--t: 49%; --l: 56%; --r: -1deg">width regularity</span>
+            <span style="--t: 38%; --l: 49%; --r: -1deg">variability</span>
+            <span style="--t: 2%; --l: 9%; --r: 4deg">weight</span>
+            <span style="--t: 44%; --l: 21%; --r: -2deg">slant</span>
+            <span style="--t: 6%; --l: 34%; --r: -1deg">contrast</span>
+            <span style="--t: 29%; --l: 19%; --r: -1deg"
+              >angle of contrast</span
+            >
+            <span style="--t: 3%; --l: 52%; --r: -1deg"
+              >weight distribution</span
+            >
+            <span style="--t: 73%; --l: 34%; --r: -5deg">stems</span>
+            <span style="--t: 38%; --l: 3%; --r: 3deg">joins</span>
+            <span style="--t: 36%; --l: 36%; --r: -6deg">bowls</span>
+            <span style="--t: 16%; --l: 19%; --r: -3deg">terminals</span>
+            <span style="--t: 69%; --l: 56%; --r: -5deg">serifs</span>
+            <span style="--t: 5%; --l: 19%; --r: 1deg">monospace</span>
+            <span style="--t: 71%; --l: 47%; --r: 2deg">speed</span>
+            <span style="--t: 66%; --l: 78%; --r: -2deg">regularity</span>
+            <span style="--t: 57%; --l: 25%; --r: -3deg">flourish</span>
+            <span style="--t: 17%; --l: 85%; --r: 1deg">decoration</span>
+            <span style="--t: 19%; --l: 5%; --r: 0deg">brackets</span>
+            <span style="--t: 54%; --l: 6%; --r: -3deg">slab-serif</span>
+            <span style="--t: 66%; --l: 11%; --r: -5deg">dimension</span>
+          </div>
         </section>
 
         <!-- slide -->
@@ -242,7 +819,7 @@
             >
           </p>
           <p>Practical definitions</p>
-          <ul class="fragment">
+          <ul>
             <li>Characters & glyphs</li>
             <li>Splines, lines, & paths</li>
             <li>Points & the em-unit</li>
