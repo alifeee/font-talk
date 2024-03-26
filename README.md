@@ -1,6 +1,8 @@
 # Font Talk
 
-Presentation for a font talk using [reveal.js](https://revealjs.com/).
+A talk about fonts, for Front-End Sheffield (FES) March 2024 
+
+Using [reveal.js](https://revealjs.com/).
 
 ## Convert `TTF` to `WOFF` font
 
