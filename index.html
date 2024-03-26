@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="dist/theme/black.css" />
 
     <!-- Theme used for syntax highlighted code -->
-    <!-- <link rel="stylesheet" href="plugin/highlight/monokai.css" /> -->
+    <link rel="stylesheet" href="dist/theme/monokai.css" />
     <link rel="stylesheet" href="./dist/theme/fonts/fonts.css" />
     <link rel="stylesheet" href="./dist/theme/scriptfonts/fonts.css" />
     <style>
@@ -473,7 +473,7 @@
 
     <script src="dist/reveal.js"></script>
     <!-- <script src="plugin/markdown/markdown.js"></script> -->
-    <!-- <script src="plugin/highlight/highlight.js"></script> -->
+    <script src="dist/plugins/highlight.js"></script>
     <script src="dist/plugins/notes.js"></script>
     <script src="dist/plugins/countdown.js"></script>
     <script>
@@ -486,7 +486,7 @@
         // Learn about plugins: https://revealjs.com/plugins/
         // plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
         countdown: { defaultTime: 600, autostart: "no" },
-        plugins: [RevealNotes],
+        plugins: [RevealNotes, RevealHighlight],
       });
     </script>
   </body>
