@@ -54,7 +54,7 @@
             src="https://alifeee.co.uk/profile-picture.png"
             alt="pixel-art drawing of author. headshot."
           />
-          <span class="block"
+          <span class="block font--bogface"
             >by <a href="https://linktr.ee/alifeee">alifeee</a></span
           >
           <img
@@ -62,7 +62,7 @@
             src="./images/qr_to_website.png"
             alt="QR code linking to https://alifeee.co.uk/font-talk/"
           />
-          <figcaption>
+          <figcaption class="font--boring-boron">
             <a href="https://alifeee.co.uk/font-talk/"
               >https://alifeee.co.uk/font-talk/</a
             >
@@ -72,19 +72,19 @@
         <!-- slide -->
         <section>
           <ul>
-            <li>Why I love fonts</li>
-            <ul>
+            <li class="font--express">Why I love fonts</li>
+            <ul class="font--express">
               <li>Design is fun</li>
               <li>Individuality is fun</li>
             </ul>
-            <li>Using Fonts</li>
-            <ul>
+            <li class="font--epilog">Using Fonts</li>
+            <ul class="font--epilog">
               <li>On the web</li>
               <li>Thoughts on Google Fonts</li>
               <li>NOT using fonts</li>
             </ul>
-            <li>Making fonts!</li>
-            <ul>
+            <li class="font--toms-new-roman">Making fonts!</li>
+            <ul class="font--toms-new-roman">
               <li>Design</li>
               <li>Practically</li>
             </ul>
@@ -93,7 +93,7 @@
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1>Design is fun</h1>
+          <h1 class="font--kokekoko">Design is fun</h1>
           <div class="r-stack r-stretch">
             <img
               class="fragment"
@@ -124,7 +124,7 @@
               alt=""
             />
           </div>
-          <div class="r-stack" style="font-size: 1rem">
+          <div class="r-stack font--epilog" style="font-size: 1.5rem">
             <figcaption
               class="fragment fade-in-then-out"
               data-fragment-index="1"
@@ -150,27 +150,31 @@
         <!-- slide -->
         <section>
           <section data-auto-animate>
-            <h1>A history of typefaces</h1>
+            <h1 data-id="h1">A History of Typefaces</h1>
           </section>
-          <section data-auto-animate>
-            <h1>A history of typefaces</h1>
+          <section data-auto-animate class="font--valium">
+            <h1 data-id="h1">A History of Typefaces</h1>
           </section>
-          <section data-auto-animate>
-            <h1>A history of typefaces</h1>
+          <section data-auto-animate class="font--unplugged">
+            <h1 data-id="h1">A History of Typefaces</h1>
           </section>
-          <section data-auto-animate>
-            <h1>A history of typefaces</h1>
+          <section data-auto-animate class="font--petits-bateaux">
+            <h1 data-id="h1">A History of Typefaces</h1>
           </section>
-          <section data-auto-animate>
-            <h1>A history of typefaces</h1>
+          <section data-auto-animate class="font--chopin-script">
+            <h1 data-id="h1" style="text-transform: none">
+              A History of Typefaces
+            </h1>
           </section>
         </section>
 
         <!-- slide -->
         <section>
-          <h2>How many fonts do you encounter in a day?</h2>
+          <h2 class="font--toms-new-roman">
+            How many fonts do you encounter in a day?
+          </h2>
           <!-- press t to start timer -->
-          <h3 class="fragment" data-fragment-index="1">
+          <h3 class="fragment font--epilog" data-fragment-index="1">
             How about in a minute?
           </h3>
           <countdown
@@ -184,7 +188,7 @@
             time="60"
             autostart="no"
           ></countdown>
-          <div class="fragment">
+          <div class="fragment font--toms-handwriting">
             <p>How many did you find?</p>
             <p>Is it more than you expect?</p>
             <p>How different are they?</p>
@@ -195,7 +199,9 @@
         <!-- slide -->
         <section data-auto-animate>
           <section>
-            <h1 style="font-size: 5rem">Individuality is fun</h1>
+            <h1 style="font-size: 5rem" class="font--natural-log">
+              Individuality is fun
+            </h1>
             <div class="r-stack r-stretch">
               <img
                 class="fragment"
@@ -212,7 +218,7 @@
                 alt="Screenshot of clofont.free.fr"
               />
             </div>
-            <div class="r-stack" style="font-size: 1rem">
+            <div class="r-stack font--epilog" style="font-size: 1.5rem">
               <figcaption
                 class="fragment fade-in-then-out"
                 data-fragment-index="1"
@@ -232,8 +238,8 @@
 
         <!-- slide -->
         <section>
-          <h1>Using Fonts</h1>
-          <p>
+          <h1 class="font--boring-boron">Using Fonts</h1>
+          <p class="font--toms-new-roman">
             Personal fonts have a great home on personal websites or anywhere
             you can put CSS!
           </p>
@@ -251,7 +257,7 @@
           <code class="font--bogface">
             &lt;span class="font--bogface"&gt;simple BogFace!&lt;/span&gt;
           </code>
-          <p style="font-size: 1rem">
+          <p style="font-size: 1.5rem" class="font--epilog">
             See Zach Leatherman's
             <a href="https://www.zachleat.com/web/comprehensive-webfonts/"
               >Comprehensive Webfonts</a
@@ -266,11 +272,13 @@
 
         <!-- slide -->
         <section>
-          <h1 style="font-size: 3rem">Using personal fonts on the web</h1>
+          <h1 style="font-size: 3rem" class="font--bogface">
+            Using personal fonts on the web
+          </h1>
           <!-- grid of three images with bottom centred -->
           <div
             style="display: grid; grid-template-columns: repeat(2, 1fr)"
-            class="r-stretch"
+            class="r-stretch font--epilog"
           >
             <figure>
               <img
@@ -278,7 +286,7 @@
                 src="./images/using_webfonts_weeknotes.png"
                 alt="Screenshot of weeknotes.alifeee.co.uk"
               />
-              <figcaption style="font-size: 1rem">
+              <figcaption style="font-size: 1.5rem">
                 <a href="https://weeknotes.alifeee.co.uk"
                   >weeknotes.alifeee.co.uk</a
                 >
@@ -290,7 +298,7 @@
                 src="./images/using_webfonts_rsshole.png"
                 alt="Screenshot of rss hole browser extension"
               />
-              <figcaption style="font-size: 1rem">
+              <figcaption style="font-size: 1.5rem">
                 <a href="https://github.com/neilzilla/rss-hole/"
                   >https://github.com/neilzilla/rss-hole/</a
                 >
@@ -302,7 +310,7 @@
                 src="./images/using_webfonts_liputenpo.png"
                 alt="Screenshot of liputenpo.org"
               />
-              <figcaption style="font-size: 1rem">
+              <figcaption style="font-size: 1.5rem">
                 <a href="https://liputenpo.org/">liputenpo.org</a>
               </figcaption>
             </figure>
@@ -312,7 +320,7 @@
                 src="./images/using_webfonts_card.png"
                 alt="Screenshot of alifeee.co.uk/pages/card.html"
               />
-              <figcaption style="font-size: 1rem">
+              <figcaption style="font-size: 1.5rem">
                 <a
                   href="https://alifeee.co.uk/pages/card.html?n=VG86IEZFUw==&m=Q29uZ3JhdHVsYXRpb25zIG9uIGZpbmRpbmcgYW4gRWFzdGVyIGVnZyB0aGlzIGhvbHkgd2VlayBvZiBFYXN0ZXI="
                   >greetings card</a
@@ -324,7 +332,9 @@
 
         <!-- slide -->
         <section>
-          <h1 style="font-size: 3rem">Google Fonts usage</h1>
+          <h1 style="font-size: 3rem" class="font--toms-new-roman">
+            Google Fonts usage
+          </h1>
           <pre>
             <code data-line-numbers data-trim>
               #!/bin/bash
@@ -342,7 +352,7 @@
                 | awk '{sum += $0; tot += 1} END {print sum "/" tot}'
             </code>
           </pre>
-          <table>
+          <table class="font--boring-boron">
             <tr>
               <th>Site</th>
               <th colspan="2">Fraction</th>
@@ -358,7 +368,9 @@
               <td>█░░░░░░░░░░░</td>
             </tr>
           </table>
-          <p>Caveat: does not show self-hosted fonts</p>
+          <p class="font--toms-handwriting">
+            Caveat: does not show self-hosted fonts
+          </p>
         </section>
 
         <!-- slide -->
@@ -495,7 +507,9 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section>
-          <h1 style="font-size: 3rem">OFF the web</h1>
+          <h1 style="font-size: 3rem" class="font--toms-new-roman">
+            OFF the web
+          </h1>
           <div class="r-stack r-stretch">
             <img
               class="fragment"
@@ -519,7 +533,7 @@ Hurting Performance & Wasting Resources
               alt="Picture of laser-cut wood with custom font"
             />
           </div>
-          <div class="r-stack">
+          <div class="r-stack font--epilog">
             <figcaption
               class="fragment fade-in-then-out"
               data-fragment-index="1"
@@ -549,8 +563,10 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1 style="font-size: 4rem">"Boggy websites"</h1>
-          <h2 data-id="h2" style="font-size: 2rem">
+          <h1 style="font-size: 4rem" class="font--toms-new-roman">
+            "<span class="font--bogface">Boggy</span> websites"
+          </h1>
+          <h2 data-id="h2" style="font-size: 2rem" class="font--boring-boron">
             Computers are customisable!
           </h2>
           <figure class="r-stretch">
@@ -559,7 +575,7 @@ Hurting Performance & Wasting Resources
               src="./images/boggyweb_intro_customise.png"
               alt="Screenshot of Firefox's font customise settings window"
             />
-            <figcaption style="font-size: 1rem">
+            <figcaption style="font-size: 1.5rem" class="font--epilog">
               Firefox's
               <a
                 href="https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use"
@@ -572,12 +588,14 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1 style="font-size: 4rem">"Boggy websites"</h1>
-          <h2 data-id="h2" style="font-size: 2rem">
+          <h1 style="font-size: 4rem" class="font--toms-new-roman">
+            "<span class="font--bogface">Boggy</span> websites"
+          </h1>
+          <h2 data-id="h2" style="font-size: 2rem" class="font--boring-boron">
             Part 1: Unstyled websites
           </h2>
           <div class="r-stack r-stretch">
-            <nav>
+            <nav class="font--epilog">
               <ul>
                 <li>
                   <a href="https://pabigot.github.io/pyxb/overview_how.html">
@@ -616,7 +634,7 @@ Hurting Performance & Wasting Resources
               alt="Screenshot of Wikipedia, all in custom font"
             />
           </div>
-          <div class="r-stack" style="font-size: 1rem">
+          <div class="r-stack font--epilog" style="font-size: 1rem">
             <figcaption
               class="fragment fade-in-then-out"
               data-fragment-index="1"
@@ -638,8 +656,10 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1 style="font-size: 4rem">"Boggy websites"</h1>
-          <h2 data-id="h2" style="font-size: 2rem">
+          <h1 style="font-size: 4rem" class="font--toms-new-roman">
+            "<span class="font--bogface">Boggy</span> websites"
+          </h1>
+          <h2 data-id="h2" style="font-size: 2rem" class="font--boring-boron">
             Part 1a: Unstylable websites
           </h2>
           <figure class="r-stretch">
@@ -648,7 +668,7 @@ Hurting Performance & Wasting Resources
               src="./images/boggyweb_unstyleable_google.png"
               alt="Screenshot of Google sign-in, showing a custom font in a select dropdown"
             />
-            <figcaption style="font-size: 1rem">
+            <figcaption style="font-size: 1rem" class="font--epilog">
               <a href="https://accounts.google.com/v3/signin/identifier">
                 https://accounts.google.com/v3/signin/identifier
               </a>
@@ -658,12 +678,14 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1 style="font-size: 4rem">"Boggy websites"</h1>
-          <h2 data-id="h2" style="font-size: 2rem">
+          <h1 style="font-size: 4rem" class="font--toms-new-roman">
+            "<span class="font--bogface">Boggy</span> websites"
+          </h1>
+          <h2 data-id="h2" style="font-size: 2rem" class="font--boring-boron">
             Part 2: Missing fonts or styles
           </h2>
           <div class="r-stack r-stretch">
-            <nav>
+            <nav class="font--epilog">
               <ul>
                 <li>
                   <a
@@ -704,7 +726,7 @@ Hurting Performance & Wasting Resources
               alt="Screenshot of train driver training website, with a heading in a custom font"
             />
           </div>
-          <div class="r-stack" style="font-size: 1rem">
+          <div class="r-stack font--epilog" style="font-size: 1rem">
             <figcaption
               class="fragment fade-in-then-out"
               data-fragment-index="1"
@@ -728,22 +750,26 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1>You should make a font!</h1>
+          <h1 class="font--bogface">You should make a font!</h1>
         </section>
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1 style="font-size: 3rem">You should make a font!</h1>
+          <h1 style="font-size: 3rem" class="font--bogface">
+            You should make a font!
+          </h1>
           <pre><code data-line-numbers data-trim><script type="text/template">
               wget https://alifeee.co.uk/bookmarks
               cat bookmarks | grep "<a" | awk -F '"' '{print $2}' > sites.txt
               for fn in `cat sites.txt`; do wget "$fn"; done
               grep -rinE "<a.*font" sites/ > output.txt
           </script></code></pre>
-          <p>Only 4 of 105 sites mentioned making fonts</p>
+          <p class="font--toms-new-roman">
+            Only 4 of 105 sites mentioned making fonts
+          </p>
           <nav
             style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
-            class="r-stretch"
+            class="r-stretch font--epilog"
           >
             <a href="http://fonts.tom7.com/">fonts.tom7.com</a>
             <a href="http://clofont.free.fr/">clofont.free.fr</a>
@@ -752,7 +778,7 @@ Hurting Performance & Wasting Resources
               tholman.com/post/smelvetica
             </a>
           </nav>
-          <p style="font-size: 1.5rem">
+          <p style="font-size: 1.5rem" class="font--toms-handwriting">
             Bonus mention:
             <a href="https://blinry.org/anki-fonts/">
               https://blinry.org/anki-fonts/
@@ -762,16 +788,15 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section data-auto-animate>
-          <h1>How to design a font</h1>
-          <blockquote>
+          <h1 class="font--boring-boron">How to design a font</h1>
+          <blockquote class="font--toms-handwriting" style="font-size: 3rem">
             Font design can be a Trap, but I find it a rather pleasant one.
           </blockquote>
-          <p>
+          <p class="font--epilog r-stretch">
             <a href="https://fontforge.org/docs/"
               >https://fontforge.org/docs/</a
             >
           </p>
-          <div class="r-stretch"></div>
           <div class="fragment float-words">
             <span style="--t: 36%; --l: 77%; --r: -4deg">construction</span>
             <span style="--t: 25%; --l: 45%; --r: -1deg">x-height</span>
@@ -808,13 +833,13 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section>
-          <h1>How to make a font</h1>
-          <p>
+          <h1 class="font--boring-boron">How to make a font</h1>
+          <p class="font--epilog">
             <a href="https://fontforge.org/docs/">
               https://fontforge.org/docs/
             </a>
           </p>
-          <p>
+          <p class="font--epilog">
             <a href="https://fontforge.org/docs/tutorial.html">
               https://fontforge.org/docs/tutorial.html
             </a>
@@ -857,25 +882,31 @@ Hurting Performance & Wasting Resources
         <!-- slide -->
         <section>
           <section data-auto-animate>
-            <h1>How to make letter forms</h1>
+            <h1 class="font--boring-boron">How to make letter forms</h1>
             <ul>
-              <li>Digitally drawing them</li>
-              <li>Modifying them</li>
-              <li>Tracing them</li>
+              <li class="font--natural-log">
+                <span style="font-size: 3rem">Digitally drawing them</span>
+              </li>
+              <li class="font--toms-new-roman">Modifying them</li>
+              <li class="font--toms-handwriting" style="margin-top: 0.5rem">
+                Tracing them
+              </li>
             </ul>
           </section>
         </section>
 
         <!-- slide -->
         <section>
-          <h1>Let's make a font!</h1>
-          <ul>
+          <h1 class="font--boring-boron" style="font-size: 4rem">
+            Let's make a font!
+          </h1>
+          <ul class="font--toms-new-roman">
             <li>Sketch some letter forms!</li>
             <li>Try starting with "o" and "n"!</li>
             <li>Draw some more letters, like "adhesion" or "videospan"!</li>
             <li>Digitize them!</li>
           </ul>
-          <ol class="fragment" style="margin-top: 1rem">
+          <ol class="fragment font--toms-handwriting" style="margin-top: 1rem">
             <li>Do you want to digitally draw letters, or trace them?</li>
             <li>What sort of "vibe" might you be going for?</li>
             <li>
@@ -887,9 +918,9 @@ Hurting Performance & Wasting Resources
 
         <!-- slide -->
         <section>
-          <h1 style="font-size: 4rem">Thanks!</h1>
+          <h1 style="font-size: 4rem" class="font--bogface">Thanks! :)</h1>
           <div style="display: grid; grid-template-columns: 1fr 1fr">
-            <figure>
+            <figure class="font--epilog">
               <img
                 style="height: 10rem"
                 src="./images/qr_to_website.png"
@@ -903,6 +934,7 @@ Hurting Performance & Wasting Resources
             </figure>
             <figure
               style="display: flex; flex-direction: column; align-items: center"
+              class="font--bogface"
             >
               <img
                 style="border-radius: 50%; height: 10rem; margin: 0"
@@ -914,8 +946,13 @@ Hurting Performance & Wasting Resources
               </p>
             </figure>
             <div>
-              <h2 style="font-size: 2rem; margin-top: 1rem">Other stuff</h2>
-              <nav style="font-size: 1.5rem">
+              <h2
+                style="font-size: 2rem; margin-top: 1rem"
+                class="font--toms-new-roman"
+              >
+                Other stuff
+              </h2>
+              <nav style="font-size: 1.5rem" class="font--epilog">
                 <ul>
                   <li>
                     <a href="https://blog.alifeee.co.uk/making-bogface/">
