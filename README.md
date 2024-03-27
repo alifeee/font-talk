@@ -26,3 +26,9 @@ find . -name "*.woff" -exec ./filename_to_css.sh {} \;
 ## Make presentation into a PDF
 
 See <https://revealjs.com/pdf-export/>
+
+## Shortcuts
+
+From <https://www.devopsschool.com/blog/complete-reveal-js-reference-cheatsheet/>
+
+![Screenshot of list of keyboard shortcuts for RevealJS](images/revealjs_shortcuts.png)
